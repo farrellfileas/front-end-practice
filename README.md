@@ -32,10 +32,10 @@ The code above will render a select bar with options A, B, or C. Note that the "
 *Hint: Even though the final website has lots of options, the HTML file itself actually only has 1 option (random option), the other options are rendered using JavaScript on page load*
 
 ## CSS
-Background color: #BDB76B
-Inner Box Background Color: #FFF8DC
-Mentos image border radius: 50%
-Dog image border radius: 20%
+1. Background color: #BDB76B
+2. Inner Box Background Color: #FFF8DC
+3. Mentos image border radius: 50%
+4. Dog image border radius: 20%
 
 ## Javascript
 The bulk of this project is on Javascript so its good practice for doing DOM Manipulation, handling promises, and just general JS Syntax.
