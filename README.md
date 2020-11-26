@@ -1,5 +1,6 @@
 # Overview
 Your assignment is to copy (as close as possible), the page held in https://homes.cs.washington.edu/~ffileas/DogWebsiteProject/
+
 Here are some checkpoints to make sure that you are on the right track, go through this checklist as you start making the website:
 
 1. Go to the website at https://homes.cs.washington.edu/~ffileas/DogWebsiteProject/ and get familiarized on what it does. The website essentially displays random dog pictures and specific breeds could be selected. A new image gets rendered everytime the user clicks the submit button.
@@ -38,7 +39,9 @@ Dog image border radius: 20%
 
 ## Javascript
 The bulk of this project is on Javascript so its good practice for doing DOM Manipulation, handling promises, and just general JS Syntax.
+
 The API used for this project can be found in https://dog.ceo/dog-api/documentation/
+
 Explore the available endpoints and its examples and see what you need. For reference:
 
 ---
@@ -48,15 +51,15 @@ https://dog.ceo/api/breeds/list/all
 If you look at the response of this API, it returns a JSON object which has a message which is itself a JSON object.
 The key value pair within the JSON object is
 
-breed : array of subbreeds
+> breed : array of subbreeds
 
 For example, an entry could be:
-"bulldog" : ["boston", "english", "french"]
+> "bulldog" : ["boston", "english", "french"]
 
 Representing Boston Bulldog, English Bulldog, and French Bulldog.
 
 Other entries might be:
-"pug" : []
+> "pug" : []
 
 Representing just pug (no subbreeds)
 
@@ -64,15 +67,18 @@ The information from this endpoint can be used to render the options list.
 
 ---
 To get a random image from a specific breed **with no** sub-breed, I use:
-https://dog.ceo/api/breed/{breedName}/images/random <- {breedName} being the name of the breed. eg. pug, hound, etc. 
+https://dog.ceo/api/breed/{breedName}/images/random
+> {breedName} being the name of the breed. eg. pug, hound, etc. 
 
 Checkout the API in https://dog.ceo/dog-api/documentation/breed, it's the 3rd endpoint from the top (scroll down a bit)
 
 To get a random image from a specific breed **with a** sub-breed, I use:
-https://dog.ceo/api/breed/{breedName}/{subBreedName}/images/random <- {breedName} being the name of the breed. eg. bulldog, terrier. {subBreedName} being the name of the corresponding sub-breed. eg. french, yorkshire.
+https://dog.ceo/api/breed/{breedName}/{subBreedName}/images/random 
+> {breedName} being the name of the breed. eg. bulldog, terrier. {subBreedName} being the name of the corresponding sub-breed. eg. french, yorkshire.
 
 Checkout the API in https://dog.ceo/dog-api/documentation/sub-breed, it's the 3rd endpoint from the top (scroll down a bit)
 
 ## Final Product
 You should be creating index.html, index.js, and styles.css.
+
 The git repository should contain index.html, index.js, styles.css, README.md, and mentos.jpeg.
