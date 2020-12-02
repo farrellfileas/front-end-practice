@@ -1,0 +1,55 @@
+body {
+    background-color: #BDB76B;
+}
+
+#maintitle {
+    margin: auto;
+    padding-top: 3%;
+    width: 65%;
+    text-align: center;
+}
+
+.round {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 40%;
+}
+
+#seg2 {
+  text-align: center;
+}
+
+.bgthing {
+  background-color: #FFF8DC;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+
+.dogDropdown {
+  display: block;
+  width: 40%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+
+#seg4 > button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#seg4 {
+  margin-top: 2%;
+}
+
+.hide {
+
+}
