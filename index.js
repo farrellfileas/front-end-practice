@@ -50,8 +50,8 @@
     if (ddd.selectedIndex != 0) {
       if (ddd[ddd.selectedIndex].hasAttribute("subvalue")) {
         console.log("has subvalue");
-        console.log(ddd.subvalue);
-        res = await fetch("https://dog.ceo/api/breed/" + ddd.value + "/" + ddd.subvalue + "/images/random")
+        console.log(ddd[ddd.selectedIndex].getAttribute("subvalue"));
+        res = await fetch("https://dog.ceo/api/breed/" + ddd.value + "/" + ddd[ddd.selectedIndex].getAttribute("subvalue") + "/images/random")
         .then(res => res.json());
       }
       else {
@@ -64,10 +64,8 @@
     console.log(res);
     let dogimage = qs("#dogimage");
     dogimage.src = res.message;
-  }
-
-  function findSelected() {
-    
+    let imageframe = qs("#seg5");
+    imageframe.classList.remove("hidden");
   }
 
   function qs(selector) {
