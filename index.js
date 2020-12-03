@@ -17,9 +17,7 @@
     let res = await fetch('https://dog.ceo/api/breeds/list/all')
     .then(res => res.json());
     let dogDropdown = qs(".dogDropdown");
-    console.log(res);
     var resm = res.message;
-    console.log(resm);
     for (var x in resm) {
       let xName = x.charAt(0).toUpperCase() + x.slice(1)
       if (resm[x].length == 0) {
@@ -46,22 +44,16 @@
     .then(res => res.json());
 
     let ddd = qs(".dogDropdown");
-    console.log(ddd.selectedIndex);
     if (ddd.selectedIndex != 0) {
       if (ddd[ddd.selectedIndex].hasAttribute("subvalue")) {
-        console.log("has subvalue");
-        console.log(ddd[ddd.selectedIndex].getAttribute("subvalue"));
         res = await fetch("https://dog.ceo/api/breed/" + ddd.value + "/" + ddd[ddd.selectedIndex].getAttribute("subvalue") + "/images/random")
         .then(res => res.json());
       }
       else {
-        console.log("does not have subValue");
         res = await fetch("https://dog.ceo/api/breed/" + ddd.value + "/images/random")
         .then(res => res.json());
       }
     }
-    
-    console.log(res);
     let dogimage = qs("#dogimage");
     dogimage.src = res.message;
     let imageframe = qs("#seg5");
