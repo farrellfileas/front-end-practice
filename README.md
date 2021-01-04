@@ -1,5 +1,5 @@
 # Overview
-Your assignment is to copy (as close as possible), the page held in https://homes.cs.washington.edu/~ffileas/DogWebsiteProject/
+yYour assignment is to copy (as close as possible), the page held in https://homes.cs.washington.edu/~ffileas/DogWebsiteProject/
 
 Here are some checkpoints to make sure that you are on the right track, go through this checklist as you start making the website:
 
